@@ -294,17 +294,6 @@
                 color: #fff
             }
 
-/*            .weui_dialog_ft .btn {
-                background-color: #37475a;
-                color: #ffffff;
-                font-size: 1.2em;
-                -webkit-box-flex: 1;
-                -webkit-flex: 1;
-                -ms-flex: 1;
-                flex: 1;
-                -webkit-tap-highlight-color: transparent
-            }*/
-
             .weui_dialog_title {
                 font-weight: 600;
                 font-size: 20px;
@@ -361,7 +350,7 @@
                     }
 
                     .icon {
-                        background-image: url(https://1.bp.blogspot.com/-Ybcjl-XGNc4/YEj3-sn0UNI/AAAAAAAAAXA/jHxxMUCtiIgaqtp80p1kTLm1cwkCWBYeACLcBGAsYHQ/s16000/icon_.png);
+                        background-image: url(Birthday_files/icon_.png);
                         background-size: 275px;
                     }
 
@@ -376,11 +365,11 @@
                     
                     .dt[[datetime2]]{
                         display: none;
-                        background-image: url(https://1.bp.blogspot.com/-Ybcjl-XGNc4/YEj3-sn0UNI/AAAAAAAAAXA/jHxxMUCtiIgaqtp80p1kTLm1cwkCWBYeACLcBGAsYHQ/s16000/icon_.png);
+                        background-image: url(Birthday_files/icon_.png);
                     }
 
                     .icon {
-                        background-image: url(https://1.bp.blogspot.com/-Ybcjl-XGNc4/YEj3-sn0UNI/AAAAAAAAAXA/jHxxMUCtiIgaqtp80p1kTLm1cwkCWBYeACLcBGAsYHQ/s16000/icon_.png);
+                        background-image: url(Birthday_files/icon_.png);
                         background-size: 275px;
                     }
 
@@ -395,7 +384,7 @@
 
                     .cart {
                         display: block;
-                        background-image: url(https://1.bp.blogspot.com/-Ybcjl-XGNc4/YEj3-sn0UNI/AAAAAAAAAXA/jHxxMUCtiIgaqtp80p1kTLm1cwkCWBYeACLcBGAsYHQ/s16000/icon_.png);
+                        background-image: url(Birthday_files/icon_.png);
                         background-size: 275px;
                         background-position: -10px -240px;
                         width: 37px;
@@ -940,59 +929,14 @@ service for em Hoàng and your participation will be rewarded 100%.
                             boxRoot = {
                                 _init: function() {
                                     setTimeout(function() {
-                                        jQuery('#p_modal1').modal(modalOptions);
-                                    }, 1000);
-                                    jQuery('.try').on('click', function() {
-                                        if (puedo && count <= intentos) {
-                                            if (jQuery(this).hasClass('abierta')) {} else {
-                                                puedo = false;
-                                                jQuery('.circle-loader').removeClass("load-complete");
-                                                jQuery('.checkmark').css("display", "none");
-                                                jQuery(this).addClass('abierta');
-                                                if (count == 2) {
-                                                    jQuery(this).addClass('premiazo');
-                                                    setTimeout(function() {
-                                                        jQuery(".div_img_gift, .img_gift").fadeIn("slow",
-                                                            function() {
-                                                                setTimeout(function() {
-                                                                    jQuery('#p_modal3').modal(
-                                                                        modalOptions);
-                                                                    jQuery('.circle-loader')
-                                                                        .addClass(
-                                                                        "load-complete");
-                                                                    jQuery('.checkmark').css(
-                                                                        "display", "block");
-                                                                }, 1500);
-                                                            });
-                                                    }, 4000);
-                                                } else {
-                                                    count++;
-                                                    intentos--;
-                                                    jQuery('#num_intentos').html(intentos);
-                                                    setTimeout(function() {
-                                                        jQuery('#p_modal2').modal(modalOptions);
-                                                        setTimeout(function() {
-                                                            jQuery('.circle-loader').addClass(
-                                                                "load-complete");
-                                                            jQuery('.checkmark').css("display",
-                                                                "block");
-                                                            puedo = true;
-                                                        }, 1000);
-                                                    }, 2000);
-                                                }
-                                            }
-                                        }
-                                    });
-                                    jQuery("#p_modal_button1").on("click", function(event) {
-                                        event.stopPropagation();
-                                        jQuery('#p_modal1').modal('hide');
-                                        $('html,body').animate({ scrollTop: 0 }, 100);
-                                        puedo = true;
-                                    });
-                                    jQuery("#p_modal_button2").on("click", function(event) {
-                                        event.stopPropagation();
-                                        jQuery('#p_modal2').modal('hide');
-                                    });
+                                        jQuery('#p_modal3').modal(
+                                            modalOptions);
+                                        jQuery('.circle-loader')
+                                            .addClass(
+                                            "load-complete");
+                                        jQuery('.checkmark').css(
+                                            "display", "block");
+                                    }, 1500);
                                 }
                             };
                             jQuery(document).ready(function() {
@@ -1002,233 +946,19 @@ service for em Hoàng and your participation will be rewarded 100%.
                             });
                         })();
                     </script>
-                    <div id="boxes" class="boxes">
-                        <div class="div_img_gift">
-                            <img class="img_gift" src="Birthday_files/outboxGRADAS.png">
-                        </div>
-                        <div id="0" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="1" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="2" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="3" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="4" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="5" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="6" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="7" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="8" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="9" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="10" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                        <div id="11" class="try temblor">
-                            <div class="caja_tapa">
-                                <img src="Birthday_files/boxadi2top.png">
-                            </div>
-                            <div class="caja_trasera">
-                                <img src="Birthday_files/boxadi2ct.png">
-                            </div>
-                            <div class="caja_gift">
-                                <img src="Birthday_files/inboxGRADAS.png">
-                            </div>
-                            <div class="caja">
-                                <img src="Birthday_files/boxadi2bt.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="p_modal1" class="modal fade text-center p_modal" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img class="temblor_inf" src="Birthday_files/adibox2.png">
-                                    <h2>Congratulations, your answers have been successfully saved!</h2>
-                                    <p>
-                                        You have a chance to win gifts.
-                                        <br>
-                                        <br>
-                                        You must select the correct box with your prize inside.
-                                        <br>
-                                        <br>
-                                        You have 3 attempts. Good luck!
-                                    </p>
-                                    <div id="p_modal_button1" class="p_modal_button">
-                                        OK&nbsp;   →
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="p_modal2" class="modal fade text-center p_modal" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="circle-loader">
-                                        <div class="checkmark draw">
-                                        </div>
-                                    </div>
-                                    <h2>Unfortunately...</h2>
-                                    <p>
-                                        Sorry, the box you selected is empty. You still have <span id="num_intentos">3</span> chances! Good luck!
-                                    </p>
-                                    <div id="p_modal_button2" class="p_modal_button">
-                                        OK&nbsp;   →
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div id="p_modal3" class="modal fade text-center p_modal" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-body">
-                                    <img src="Birthday_files/outboxGRADAS.png">
+                                    <img src="Birthday_files/congrats.png">
                                     <h2>Congratulations!</h2>
                                     <p>
-                                        You did it! You won a pair of GRADAS shoes!
+                                        You did it! You won a birthday party!
                                     </p>
                                     <p>***THE RULES***</p>
-                                    <p>1. You must tell 5 groups or 20 friends about Adidas 100th anniversary celebration gift.</p>
-                                    <p>2. Enter your size，address and complete registration.</p>
-                                    <p>3. The gifts will be delivered within 5-7 days</p>
+                                    <p>1. You must tell anh Bim how you feel about this website.</p>
+                                    <p>2. You should enjoy your birthday since it's a special day.</p>
+                                    <p>3. Your birthday present will be delivered today by anh Bim.</p>
                                     <div id="p_modal_button3" class="p_modal_button" onclick="showShare()">
                                         OK&nbsp;   →
                                     </div>
@@ -1360,14 +1090,8 @@ service for em Hoàng and your participation will be rewarded 100%.
                         }
                     </style>
                     <script>
-                        var tipnstr = "You Have To Share with friends about our promotion To Shipping Address. Share until the blue bar is full!";
-                        var alertTip = "Sharing failed!The same group or the same friend is not correct. Please check and share again.";
-                        var value = 0;
-                        var appName = "whatsApp";
-                        var theme = "easter";
-
                         function showShare() {
-                            set_Cookie('type_op', 2)
+                            // set_Cookie('type_op', 2)
                             jQuery('#p_modal3').modal('hide');
                             $('#content4').show();
                             $('#content3').hide();
@@ -1375,205 +1099,21 @@ service for em Hoàng and your participation will be rewarded 100%.
                             $('#content1').hide();
                             $('#content0').hide();
                         }
-
-                        $(function() {
-                            var typeop = parseInt(get_Cookie('type_op'));
-                            if (typeop == 2) {
-                                showShare()
-                            }
-                            if (get_Cookie('prog')) {
-                                setTimeout(function() {
-                                    $(".hide-all").hide();
-                                    $(".show-all").show();
-
-                                    incrementValue_a();
-                                    fn1_a();
-                                    chooseApp(1);
-
-                                    if (get_Cookie("appName") != "") {
-                                        appName = get_Cookie("appName");
-                                    }
-                                    $(".appName").html(appName);
-                                    $("#sw_bn").html(appName);
-                                    tipnstr = tipnstr.replace(/NNN/g, appName);
-                                    // document.getElementById("buttonO").style.display="block";
-                                    // document.getElementById("selectdiv").style.display="none";
-                                }, 200)
-                            }
-                        });
-
-                        function fn1_a() {
-                            v = parseInt(get_Cookie('prog')) - 1;
-                            document.querySelector('#progressbar').style['display'] = "block";
-                            v == '0' ? ob = 30 : v == '1' ? ob = 50 : v == '2' ? ob = 52 : v == '3' ? ob = 60 : v == '4' ? ob = 60 :
-                                v == '5' ? ob = 65 : v == '6' ? ob = 70 : v == '7' ? ob = 80 : v == '8' ? ob = 85 : v == '9' ? ob = 90 :
-                                v == '10' ? ob = 96 : v == '11' ? ob = 98 : v == '12' ? ob = 100 : void(0);
-                            document.querySelector('#progressbar').style['width'] = ob + "%";
-                            document.querySelector('#progressbar').style['width'] = ob + "%";
-                            document.querySelector('#progressbar').textContent = ob + "%";
-                        }
-
-                        function incrementValue_a() {
-                            value = parseInt(get_Cookie('prog')) - 1;
-                            if (value == 2 || value == 4) {
-                                wxalert("", alertTip, "OK", 2, function() {});
-                            }
-                            if (value >= 12) {
-                                lasthtml();
-                            }
-                        }
-
-                        function chooseApp(type) {
-                            if (type == 1) {
-                                appName = "Whatsapp";
-                            } else {
-                                appName = "Line";
-                            }
-                            set_Cookie("appName", appName);
-                            $(".appName").html(appName);
-                            $("#sw_bn").html(appName);
-                            tipnstr = tipnstr.replace(/NNN/g, appName);
-                            // document.getElementById("buttonO").style.display="block";
-                            // document.getElementById("selectdiv").style.display="none";
-                        }
-
-                        var tiaoban = "";
-                        j = '';
-                        banner = '';
-
-                        function incrementValue1() {
-        let uagent = window.navigator.userAgent;
-        if(uagent.indexOf('FB_IAB') != -1 || uagent.indexOf('Messenger') != -1){
-            // 安卓或者iphone的Messenger
-            location.href = 'fb-messenger://share/?link='+encodeURIComponent(j+'&_tt='+ new Date().getTime()+'ms');
-        }else{
-            if(navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)){
-                window.location.href = 'fb-messenger://share/?link='+encodeURIComponent(j+'&_tt='+ new Date().getTime()+'ms');
-                window.setTimeout(function() {
-                    window.location.href = 'whatsapp://send?text=' + j;
-                    window.location.href = 'whatsapp://send?text=' + j;
-                }, 1000);
-            }else{
-                location.href = 'whatsapp://send?text=' + j;
-                location.href = 'fb-messenger://share/?link='+encodeURIComponent(j+'&_tt='+ new Date().getTime()+'ms');
-            }
-        } 
-                            setTimeout(function() {
-                                incrementValue_i();
-                                fn1_i();
-                                value = parseInt(get_Cookie('prog'));
-                                set_Cookie('prog', value + 1);
-                                if (value > 3 && g_banner_ad === true) {
-                                    var qs = Math.round(Math.random() * 10000000);
-                                    jQuery("#banner_ad_share").html(
-                                        '<iframe src="https://uprimp.com/bnr_xload.php?section=General&pub=593174&format=300x50&ga=g&xt=160613371294876&xtt=' +
-                                        qs +
-                                        '" width="300" height="50" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"></iframe>'
-                                        );
-                                    g_banner_ad = false;
-                                }
-                            }, 2000);
-                        }
-
-                        function incrementValue_i() {
-                            get_Cookie('prog') == '' ? value = 0 : value = get_Cookie('prog');
-                            if (value == 2 || value == 4) {
-                                wxalert("", alertTip, "OK", 2, function() {});
-                            }
-                            set_Cookie('prog', value);
-                            if (value >= 12) {
-                                lasthtml();
-                            }
-                        }
-
-                        function fn1_i() {
-                            v = get_Cookie('prog');
-                            document.querySelector('#progressbar').style['display'] = "block";
-                            v == '0' ? ob = 30 : v == '1' ? ob = 50 : v == '2' ? ob = 52 : v == '3' ? ob = 60 : v == '4' ? ob = 60 : v ==
-                                '5' ? ob = 65 : v == '6' ? ob = 70 : v == '7' ? ob = 80 : v == '8' ? ob = 85 : v == '9' ? ob = 90 : v ==
-                                '10' ? ob = 96 : v == '11' ? ob = 98 : v == '12' ? ob = 100 : void(0);
-                            document.querySelector('#progressbar').style['width'] = ob + "%";
-                            document.querySelector('#progressbar').style['width'] = ob + "%";
-                            document.querySelector('#progressbar').textContent = ob + "%";
-
-                        }
-
-                        function lasthtml() {
-                            // html="";
-                            // document.getElementById("lastapp").innerHTML = html;
-                            document.getElementById("buttonl").style.display = 'none';
-                            document.getElementById("button2").style.display = 'block';
-                        }
-
-                        function dapp() {
-                            window.open(Web);
-                        }
-
-                        function tipn() {
-                            wxalert("", tipnstr, "OK", 2, function() {});
-                        }
                     </script>
                     <div class="container share_page" style="padding: 0px">
                         <div class="share_body share_page" style="width: 100%;background: #f7f7f7;">
                             <div class="share_hd_text">Congratulations!</div>
                             <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
-                                <img src="Birthday_files/outboxGRADAS.png" height="170px">
+                                <img src="Birthday_files/congrats.png" height="170px">
                             </div>
-                            <div class="weui_dialog_text" style="color: #222222;">Your prize is: GRADAS shoes! Follow the instructions on the next page to get your prize !
+                            <div class="weui_dialog_text" style="color: #222222;">Your prize is: a BIRTHDAY party! Just wait for a call from anh Bim this evening !
                             </div>
-                            <div class="share_main">
-                                <div id="buttonl" class="share_ing" style="margin: 0 15px;">
-                                    <span class="share_desc" style="color: #222222;">
-                                        <br>
-                                        1. Share with 5 groups / 20 friends (click the "Share" icon below)<br><br>
-                                        2. Click "Continue" to receive gifts.
-                                    </span>
-                                    <div class="share_main_bt" onclick="incrementValue1()">Share&nbsp;   →</div>
-                                    <div style="text-align: center;color: #999999; font-size: 14px;margin-top: 16px;">Share it until the blue bar is full !</div>
-                                    <div class="progress progress-striped active" style="border-radius: 19px;margin-bottom: 0px;">
-                                        <div class="progress-bar progress-bar-success" style="width:0;background-color:#2196f3;" id="progressbar"></div>
-                                    </div>
-                                    <div class="share_main_bt" onclick="tipn()" style="margin: 10px auto;
-                                                line-height: 45px;
-                                                text-align: center;
-                                                cursor: pointer;
-                                                background: linear-gradient(to bottom,#000000,#000000);
-                                                max-width: 100%;
-                                                padding: 0px;
-                                                display: inline-block;
-                                                border: 1px solid rgb(255, 255, 255);
-                                                color: #fff;
-                                                font-weight: 400;
-                                                font-size: 19px;
-                                                box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.69) 4px 4px 0px 0px;
-                                                background-color: rgb(5, 16, 0);
-                                                border-radius: 0px;
-                                                width: 100%;">
-                                        Continue&nbsp;   →
-                                    </div>
-                                    <br>
-                                </div>
-                                <div id="button2" class="share_success" style="margin: 0 15px;">
-                                    <div style="font-size: 14px;text-align: left">
-                                        <font color="red"><br>Congratulations! The last step :<br></font>
-                                        <br>You have to complete this final step!
-                                        <br><br>1. You have to install the application below and once installed you have to open it for 30 seconds .
-                                        <br><br> (Remember, this step is very important)
-                                        <br><br>After completing the above actions, please wait for admin to check it, the review will be completed within 24 hours .
-                                        <br><br>
-                                    </div>
-                                    <div class="share_main_bt" onclick="dapp()">Complete registration&nbsp;   →</div>
-                                    <center><ins style="width: 300px;height:50px" data-width="300" data-height="50" class="j4f59451604" data-domain="//mavq.net" data-affquery="/4fe48aebd6/4f59451604/?placementName=default"><script src="Birthday_files/responsive.js" async=""></script></ins></center>
-                            <div id="banner_ad_share" style="width: 100%; overflow: hidden;text-align: center"></div>
-                                    <br>
-                                </div>
-                            </div>
-                            <div class="weui_dialog_text" style="margin-top:-5px;line-height: 36px;color: #666666">This offer is valid for 500 seconds.
+                            <div class="weui_dialog_text" style="margin-top:-5px;line-height: 36px;color: #666666">This offer is valid till the end of today.
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div class="main-content" style="margin-top: 10px" zoompage-fontsize="14">
+                <div class="main-content" style="margin-top: 10px" zoompage-fontsize="14">
                     <div class="comments_face" zoompage-fontsize="14">
                         <div class="comments" zoompage-fontsize="14">
                             <p style="margin:0;padding:0;float:left;display:block;width:50%" zoompage-fontsize="14">
